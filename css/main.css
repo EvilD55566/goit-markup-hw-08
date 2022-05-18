@@ -43,8 +43,8 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .visually-hidden {
@@ -61,7 +61,8 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -175,27 +176,27 @@ color: var(--accent-color);
 
 .hero {
   background-color: var(--footer-hero-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
 }
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  max-width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: var(--primary-margin);
@@ -223,25 +224,23 @@ color: var(--accent-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.features__list {
-  display: flex;
-  margin-left: calc(-1 * var(--primary-margin));
-  flex-wrap: wrap;
+.mobile-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .features__icon-conteiner {
   height: 120px;
+  max-width: 450px;
   background-color: var(--secondary-white-color);
   border-radius: 4px;
   margin-bottom: var(--primary-margin);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.features__item {
-  margin-left: var(--primary-margin);
-  flex-basis: calc(100% / 4 - 30px);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .features__title {
@@ -252,12 +251,14 @@ color: var(--accent-color);
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .features__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 /* .features-item::before {
