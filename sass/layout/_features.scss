@@ -1,58 +1,97 @@
-.mobile-container{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+// .mobile-container{
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 .features__list {
- 
-    // display: flex;
-    // margin-bottom: calc(-1 * var(--primary-margin));
-    // flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: calc(-1 * var(--primary-margin));
+    margin-left: calc(-1 * var(--primary-margin));
+
+    @media screen and (min-width: 1200px) {}
+
+  }
+
+
+  // display: flex;
+  // margin-bottom: calc(-1 * var(--primary-margin));
+  // flex-wrap: wrap;
 }
 
 .features__icon-conteiner {
-    height: 120px;
-    max-width: 450px;
-    background-color: var(--secondary-white-color);
-    border-radius: 4px;
-    margin-bottom: var(--primary-margin);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    
+  height: 120px;
+  max-width: 450px;
+  background-color: var(--secondary-white-color);
+  border-radius: 4px;
+  margin-bottom: var(--primary-margin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 270px;
+  }
+
+
 }
 
-.features__item{
- 
-    // margin-left: var(--primary-margin);
-    // flex-basis: calc(100% / 4 - 30px);
+.features__item {
+
+
+  @media screen and (min-width: 768px) {
+    margin-left: var(--primary-margin);
+    margin-bottom: var(--primary-margin);
+    flex-basis: calc(100% / 2-30px);
+
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    flex-basis: calc(100% / 4 - 30px);
+
+  }
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: var(--primary-margin);
 }
 
 .features__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--main-title-color);
-    margin-bottom: 10px;
-    text-align: center;
-    
-}
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  margin-bottom: 10px;
+  @media screen and (max-width: 768px){
+  text-align: center;
+}}
 
 .features__text {
-  
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    margin-bottom: 30px;
-   
-   }
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
  
 
- 
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+
+
+}
+
+
+
 
 
 /* .features-item::before {
