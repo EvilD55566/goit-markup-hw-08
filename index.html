@@ -16,11 +16,23 @@
 <body>
   <!--header-->
 
-  <!-- <header class="header">
+  <header class="header">
     <div class="container">
       <div class="header-flex">
         <a class="logo link" href="./index.html">Web<span class="logo__logo-header">Studio</span></a>
         <nav class="nav">
+          <button type="button" class="menu-button menu-toggle js-open-menu">
+            <svg width="40px" height="40px"
+            aria-label="переключатель мобильного меню"
+            aria-expanded="false"
+            aria-controls="mobile menu"
+            >
+            
+           
+            <use class="icon-menu" href="./images/icons.svg#icon-menu_40px" ></use>
+            
+            </svg>
+          </button>
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link link current" href="./index.html">Студия</a>
@@ -50,9 +62,48 @@
         </ul>
       </div>
     </div>
-  </header> -->
+  </header>
   <!--hero-->
   <main>
+    <div class="js-menu-container " id="mobile menu">
+      <div class="container">
+      <button type="button" class=" menu-toggle js-close-menu">
+            <svg width="40px" height="40px">
+           
+            <use class="icon-close" href="./images/icons.svg#icon-close_40px" ></use> </svg></button>
+      <nav class="mob-nav">
+      <ul class="mob-nav__list list">
+            <li class="mob-nav__item">
+              <a class="mob-nav__link link current" href="./index.html">Студия</a>
+            </li>
+            <li class="mob-nav__item">
+              <a class="mob-nav__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-nav__item">
+              <a class="mob-nav__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mob-modal-contacts">
+          <li class="mob-modal-contacts-tel__item list">
+            <a class="mob-modal-contacts-tel__link link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+
+          <li class="mob-modal-contacts-mail__item list">
+            <a class="mob-modal-contacts-mail__link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          
+        </ul>
+        <ul class="mob-soc list">
+          <li class="mob-soc-item">Instagram</li>
+          <li class="mob-soc-item">Twitter</li>
+          <li class="mob-soc-item">Facebook</li>
+          <li class="mob-soc-item">LinkedIn</li>
+
+        </ul>
+
+</div>
+    </div>
     <section class="hero">
       <div class="container">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
@@ -501,10 +552,15 @@
   </main>
   <!--footer-->
   <footer class="footer">
-    <div class="container">
-      <div class="container-grow">
+    <div class="footer-container container">
+       
+      <!-- <div class="container-grow"> -->
+         <!-- <div class="footer-tab-flex"> -->
+           <div class="container-adress">
         <a class="logo link" href="./index.html">Web<span class="logo__footer-logo">Studio</span></a>
+       
         <address class="adress">
+          
           <ul class="adress__list list">
             <li class="adress__item">
               <a class="adress__link link" href="https://goo.gl/maps/nZqafxbNamXbDnvg8" target="blank"
@@ -518,7 +574,8 @@
             </li>
           </ul>
         </address>
-      </div>
+        </div>
+      
       <div class="footer-soc">
         <p class="join">присоединяйтесь</p>
         <ul class="footer-soc__list list">
@@ -535,7 +592,10 @@
             <a href="" class="footer-soc__link linkedin"></a>
           </li>
         </ul>
-      </div>
+         </div>
+        <!-- </div> -->
+        <!-- </div> -->
+     
 
       <div class="footer-email">
         <p class="join">Подпишитесь на рассылку</p>
@@ -544,6 +604,7 @@
           <button type="submit" class="footer-email__btn">Подписаться</button>
         </form>
       </div>
+    
     </div>
   </footer>
 
@@ -604,6 +665,49 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
+<!-- 
+(() => {
+  const refs = {
+    openMenuBtn: document.querySelector(".menu-open"),
+    closeMenuBtn: document.querySelector(".menu-close__icon"),
+    menu: document.querySelector(".mob-menu"),
+    body: document.querySelector('body')
+  };
 
+  refs.openMenuBtn.addEventListener("click", toggleMenu);
+  refs.closeMenuBtn.addEventListener("click", toggleMenu);
+
+  function toggleMenu() {
+    refs.menu.classList.toggle("is-hidden");
+    refs.body.classList.toggle('no-scroll');
+    
+  }
+})(); -->
+
+
+
+
+<!-- (() => {
+  const menuBtnRef = document.querySelector('[data-menu-mobile]');
+  const mobilMenuRef = document.querySelector('[data-menu]');
+
+  menuBtnRef.addEventListener('click', () => {
+    const expanded =
+      menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+    menuBtnRef.classList.toggle('is-open');
+    menuBtnRef.setAttribute('aria-expanded', !expanded);
+
+    mobilMenuRef.classList.toggle('is-open');
+  });
+})();
+(() => {
+  const menuBtnRef = document.querySelector('[data-menu-hidden]');
+  const mobilMenuRef = document.querySelector('[menu-hidden]');
+
+  menuBtnRef.addEventListener('click', () => {
+    const expanded = mobilMenuRef.classList.toggle('menu-open');
+  });
+})(); -->
 </html>

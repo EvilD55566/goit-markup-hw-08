@@ -1,11 +1,16 @@
 .modal-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.50;
+    // line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-title-color);
     margin-bottom: 12px;
+    @media screen and(min-width:1200px) {
+        line-height: 1.15;
+        
+    }
 }
 
 .modal-input {
@@ -134,13 +139,21 @@
 }
 
 .check-text {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.17;
+    // font-size: 14px;
+    // line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and(min-width:1200px){
+    font-size: 14px;
+    line-height: 1.71;  
+        
+    }
 
 }
 

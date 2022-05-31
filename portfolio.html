@@ -14,43 +14,51 @@
 
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
-   
-  <header class="header">
-    <div class="container">
-      <div class="header-flex">
-        <a class="logo link" href="./index.html">Web<span class="logo__logo-header">Studio</span></a>
-        <nav class="nav">
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a class="nav__link link " href="./index.html">Студия</a>
+    <header class="header">
+      <div class="container">
+        <div class="header-flex">
+          <a class="logo link" href="./index.html"
+            >Web<span class="logo__logo-header">Studio</span></a
+          >
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link link" href="./index.html">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link current" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="header-contacts">
+            <li class="header-contacts__item list">
+              <a
+                class="header-contacts__link link"
+                href="mailto:info@devstudio.com"
+                ><svg class="header-contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="nav__item">
-              <a class="nav__link link current" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="">Контакты</a>
+            <li class="header-contacts__item list">
+              <a class="header-contacts__link link" href="tel:+380961111111"
+                ><svg class="header-contacts__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="header-contacts">
-          <li class="header-contacts__item list">
-            <a class="header-contacts__link link" href="mailto:info@devstudio.com"><svg class="header-contacts__icon" width="16"
-                height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a>
-          </li>
-          <li class="header-contacts__item list">
-            <a class="header-contacts__link link" href="tel:+380961111111"><svg class="header-contacts__icon" width="10"
-                height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>+38 096 111 11 11</a>
-          </li>
-        </ul>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
     <main>
       <section class="portfolio section">
@@ -76,14 +84,63 @@
 
           <ul class="port-list list">
             <li class="port-item">
-              <a class="port-link link" href=""
-                ><div class="port-wrap">
-                  <img
-                    src="./images/images-portfolio1.jpg"
-                    alt="Страница Веб-сайта на ноутбуке"
-                    width="370"
-                    height="294"
-                  />
+              <a class="port-link link" href="">
+                <div class="port-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk1-port1x.webp 1x,
+                        ./images/desk1-port2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk1-port1x.jpg 1x,
+                        ./images/desk1-port2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab1-port1x.webp 1x,
+                        ./images/tab1-port2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab1-port1x.jpg 1x,
+                        ./images/tab1-port2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob1-port1x.webp 1x,
+                        ./images/mob1-port2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob1-port1x.jpg 1x,
+                        ./images/mob1-port2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mob1-port1x.jpg"
+                      alt="Страница Веб-сайта на ноутбуке"
+                    />
+                  </picture>
+
                   <p class="port-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -98,14 +155,63 @@
             </li>
 
             <li class="port-item">
-              <a class="port-link link" href=""
-                ><div class="port-wrap">
-                  <img
-                    src="./images/images-portfolio2.jpg"
-                    alt="Два баскетболиста во время игры"
-                    width="370"
-                    height="294"
-                  />
+              <a class="port-link link" href="">
+                <div class="port-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk2-port1x.webp 1x,
+                        ./images/desk2-port2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk2-port1x.jpg 1x,
+                        ./images/desk2-port2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab2-port1x.webp 1x,
+                        ./images/tab2-port2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab2-port1x.jpg 1x,
+                        ./images/tab2-port2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob2-port1x.webp 1x,
+                        ./images/mob2-port2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob2-port1x.jpg 1x,
+                        ./images/mob2-port2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mob2-port1x.jpg"
+                      alt="Два баскетболиста во время игры"
+                    />
+                  </picture>
+
                   <p class="port-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -122,14 +228,63 @@
             </li>
 
             <li class="port-item">
-              <a class="port-link link" href=""
-                ><div class="port-wrap">
-                  <img
-                    src="./images/images-portfolio3.jpg"
-                    alt="Логотип ресторана Сиафуд"
-                    width="370"
-                    height="294"
-                  />
+              <a class="port-link link" href="">
+                <div class="port-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk3-port1x.webp 1x,
+                        ./images/desk3-port2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk3-port1x.jpg 1x,
+                        ./images/desk3-port2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab3-port1x.webp 1x,
+                        ./images/tab3-port2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab3-port1x.jpg 1x,
+                        ./images/tab3-port2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob3-port1x.webp 1x,
+                        ./images/mob3-port2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob3-port1x.jpg 1x,
+                        ./images/mob3-port2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mob3-port1x.jpg"
+                      alt="Логотип ресторана Сиафуд"
+                    />
+                  </picture>
+
                   <p class="port-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -146,14 +301,60 @@
             </li>
 
             <li class="port-item">
-              <a class="port-link link" href=""
-                ><div class="port-wrap">
-                  <img
-                    src="./images/images-portfolio4.jpg"
-                    alt="Наушники"
-                    width="370"
-                    height="294"
-                  />
+              <a class="port-link link" href="">
+                <div class="port-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk4-port1x.webp 1x,
+                        ./images/desk4-port2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk4-port1x.jpg 1x,
+                        ./images/desk4-port2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab4-port1x.webp 1x,
+                        ./images/tab4-port2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab4-port1x.jpg 1x,
+                        ./images/tab4-port2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob4-port1x.webp 1x,
+                        ./images/mob4-port2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob4-port1x.jpg 1x,
+                        ./images/mob4-port2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/mob4-port1x.jpg" alt="Наушники" />
+                  </picture>
+
                   <p class="port-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -168,14 +369,60 @@
             </li>
 
             <li class="port-item">
-              <a class="port-link link" href=""
-                ><div class="port-wrap">
-                  <img
-                    src="./images/images-portfolio5.jpg"
-                    alt="Две коробки"
-                    width="370"
-                    height="294"
-                  />
+              <a class="port-link link" href="">
+                <div class="port-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk5-port1x.webp 1x,
+                        ./images/desk5-port2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk5-port1x.jpg 1x,
+                        ./images/desk5-port2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab5-port1x.webp 1x,
+                        ./images/tab5-port2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab5-port1x.jpg 1x,
+                        ./images/tab5-port2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob5-port1x.webp 1x,
+                        ./images/mob5-port2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob5-port1x.jpg 1x,
+                        ./images/mob5-port2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/mob5-port1x.jpg" alt="Две коробки" />
+                  </picture>
+
                   <p class="port-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -192,14 +439,63 @@
             </li>
 
             <li class="port-item">
-              <a class="port-link link" href=""
-                ><div class="port-wrap">
-                  <img
-                    src="./images/images-portfolio6.jpg"
-                    alt="Монитор с изображением Веб-сайта"
-                    width="370"
-                    height="294"
-                  />
+              <a class="port-link link" href="">
+                <div class="port-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk6-port1x.webp 1x,
+                        ./images/desk6-port2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk6-port1x.jpg 1x,
+                        ./images/desk6-port2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab6-port1x.webp 1x,
+                        ./images/tab6-port2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab6-port1x.jpg 1x,
+                        ./images/tab6-port2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob6-port1x.webp 1x,
+                        ./images/mob6-port2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob6-port1x.jpg 1x,
+                        ./images/mob6-port2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mob6-port1x.jpg"
+                      alt="Монитор с изображением Веб-сайта"
+                    />
+                  </picture>
+
                   <p class="port-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -216,14 +512,63 @@
             </li>
 
             <li class="port-item">
-              <a class="port-link link" href=""
-                ><div class="port-wrap">
-                  <img
-                    src="./images/images-portfolio7.jpg"
-                    alt="Развёрнутые страницы журнала"
-                    width="370"
-                    height="294"
-                  />
+              <a class="port-link link" href="">
+                <div class="port-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk7-port1x.webp 1x,
+                        ./images/desk7-port2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk7-port1x.jpg 1x,
+                        ./images/desk7-port2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab7-port1x.webp 1x,
+                        ./images/tab7-port2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab7-port1x.jpg 1x,
+                        ./images/tab7-port2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob7-port1x.webp 1x,
+                        ./images/mob7-port2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob7-port1x.jpg 1x,
+                        ./images/mob7-port2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mob7-port1x.jpg"
+                      alt="Развёрнутые страницы журнала"
+                    />
+                  </picture>
+
                   <p class="port-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -239,14 +584,60 @@
               </a>
             </li>
             <li class="port-item">
-              <a class="port-link link" href=""
-                ><div class="port-wrap">
-                  <img
-                    src="./images/images-portfolio8.jpg"
-                    alt="Бирка"
-                    width="370"
-                    height="294"
-                  />
+              <a class="port-link link" href="">
+                <div class="port-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk8-port1x.webp 1x,
+                        ./images/desk8-port2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk8-port1x.jpg 1x,
+                        ./images/desk8-port2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab8-port1x.webp 1x,
+                        ./images/tab8-port2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab8-port1x.jpg 1x,
+                        ./images/tab8-port2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob8-port1x.webp 1x,
+                        ./images/mob8-port2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob8-port1x.jpg 1x,
+                        ./images/mob8-port2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img src="./images/mob8-port1x.jpg" alt="Бирка" />
+                  </picture>
+
                   <p class="port-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -260,14 +651,63 @@
               </a>
             </li>
             <li class="port-item">
-              <a class="port-link link" href=""
-                ><div class="port-wrap">
-                  <img
-                    src="./images/images-portfolio9.jpg"
-                    alt="Работа в приложении на ноутбуке"
-                    width="370"
-                    height="294"
-                  />
+              <a class="port-link link" href="">
+                <div class="port-wrap">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk9-port1x.webp 1x,
+                        ./images/desk9-port2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/desk9-port1x.jpg 1x,
+                        ./images/desk9-port2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab9-port1x.webp 1x,
+                        ./images/tab9-port2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab9-port1x.jpg 1x,
+                        ./images/tab9-port2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob9-port1x.webp 1x,
+                        ./images/mob9-port2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob9-port1x.jpg 1x,
+                        ./images/mob9-port2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/mob9-port1x.jpg"
+                      alt="Работа в приложении на ноутбуке"
+                    />
+                  </picture>
+
                   <p class="port-top-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -286,51 +726,73 @@
     </main>
 
     <footer class="footer">
-    <div class="container">
-      <div class="container-grow">
-        <a class="logo link" href="./index.html">Web<span class="logo__footer-logo">Studio</span></a>
-        <address class="adress">
-          <ul class="adress__list list">
-            <li class="adress__item">
-              <a class="adress__link link" href="https://goo.gl/maps/nZqafxbNamXbDnvg8" target="blank"
-                rel="noopener noreferrer nofollow"><span>г. Киев, пр-т Леси Украинки, 26</span> </a>
+      <div class="footer-container container">
+        <!-- <div class="container-grow"> -->
+        <!-- <div class="footer-tab-flex"> -->
+        <div class="container-adress">
+          <a class="logo link" href="./index.html"
+            >Web<span class="logo__footer-logo">Studio</span></a
+          >
+
+          <address class="adress">
+            <ul class="adress__list list">
+              <li class="adress__item">
+                <a
+                  class="adress__link link"
+                  href="https://goo.gl/maps/nZqafxbNamXbDnvg8"
+                  target="blank"
+                  rel="noopener noreferrer nofollow"
+                  ><span>г. Киев, пр-т Леси Украинки, 26</span>
+                </a>
+              </li>
+              <li class="adress__item">
+                <a class="adress__link link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="adress__item">
+                <a class="adress__link link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-soc">
+          <p class="join">присоединяйтесь</p>
+          <ul class="footer-soc__list list">
+            <li class="footer-soc__item">
+              <a href="" class="footer-soc__link instagram"></a>
             </li>
-            <li class="adress__item">
-              <a class="adress__link link" href="mailto:info@example.com">info@example.com</a>
+            <li class="footer-soc__item">
+              <a href="" class="footer-soc__link twitter"></a>
             </li>
-            <li class="adress__item">
-              <a class="adress__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+            <li class="footer-soc__item">
+              <a href="" class="footer-soc__link facebook"></a>
+            </li>
+            <li class="footer-soc__item">
+              <a href="" class="footer-soc__link linkedin"></a>
             </li>
           </ul>
-        </address>
-      </div>
-      <div class="footer-soc">
-        <p class="join">присоединяйтесь</p>
-        <ul class="footer-soc__list list">
-          <li class="footer-soc__item">
-            <a href="" class="footer-soc__link instagram"></a>
-          </li>
-          <li class="footer-soc__item">
-            <a href="" class="footer-soc__link twitter"></a>
-          </li>
-          <li class="footer-soc__item">
-            <a href="" class="footer-soc__link facebook"></a>
-          </li>
-          <li class="footer-soc__item">
-            <a href="" class="footer-soc__link linkedin"></a>
-          </li>
-        </ul>
-      </div>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
 
-      <div class="footer-email">
-        <p class="join">Подпишитесь на рассылку</p>
-        <form class="footer-email__form">
-          <input type="email" name="footer-email-input" class="footer-email__input" required placeholder="E-mail" />
-          <button type="submit" class="footer-email__btn">Подписаться</button>
-        </form>
+        <div class="footer-email">
+          <p class="join">Подпишитесь на рассылку</p>
+          <form class="footer-email__form">
+            <input
+              type="email"
+              name="footer-email-input"
+              class="footer-email__input"
+              required
+              placeholder="E-mail"
+            />
+            <button type="submit" class="footer-email__btn">Подписаться</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </footer>
-
+    </footer>
   </body>
 </html>
