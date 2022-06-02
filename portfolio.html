@@ -23,6 +23,21 @@
             >Web<span class="logo__logo-header">Studio</span></a
           >
           <nav class="nav">
+            <button type="button" class="menu-button menu-toggle js-open-menu">
+              <svg
+                width="40px"
+                height="40px"
+                aria-label="переключатель мобильного меню"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                role="button"
+              >
+                <use
+                  class="icon-menu"
+                  href="./images/icons.svg#icon-menu_40px"
+                ></use>
+              </svg>
+            </button>
             <ul class="nav__list list">
               <li class="nav__item">
                 <a class="nav__link link" href="./index.html">Студия</a>
@@ -42,7 +57,11 @@
               <a
                 class="header-contacts__link link"
                 href="mailto:info@devstudio.com"
-                ><svg class="header-contacts__icon" width="16" height="12">
+                ><svg
+                  class="header-contacts__icon--mail"
+                  width="14"
+                  height="10"
+                >
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
@@ -50,7 +69,7 @@
             </li>
             <li class="header-contacts__item list">
               <a class="header-contacts__link link" href="tel:+380961111111"
-                ><svg class="header-contacts__icon" width="10" height="16">
+                ><svg class="header-contacts__icon--tel" width="10" height="14">
                   <use href="./images/icons.svg#icon-smartphone"></use></svg
                 >+38 096 111 11 11</a
               >
@@ -61,6 +80,69 @@
     </header>
 
     <main>
+      <div class="js-menu-container" id="mobile-menu">
+        <div class="container">
+          <button type="button" class="menu-toggle js-close-menu">
+            <svg width="40px" height="40px">
+              <use
+                class="icon-close"
+                href="./images/icons.svg#icon-close_40px"
+              ></use>
+            </svg>
+          </button>
+          <nav class="mob-nav">
+            <ul class="mob-nav__list list">
+              <li class="mob-nav__item">
+                <a class="mob-nav__link link current" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-nav__item">
+                <a
+                  class="mob-nav__link link mob-current"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-nav__item">
+                <a class="mob-nav__link link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mob-modal-contacts">
+            <li class="mob-modal-contacts-tel__item list">
+              <a
+                class="mob-modal-contacts-tel__link link"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+
+            <li class="mob-modal-contacts-mail__item list">
+              <a
+                class="mob-modal-contacts-mail__link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-soc list">
+            <li class="mob-soc-item">
+              <a class="mob-soc-link" href="">Instagram</a>
+            </li>
+            <li class="mob-soc-item">
+              <a class="mob-soc-link" href="">Twitter</a>
+            </li>
+            <li class="mob-soc-item">
+              <a class="mob-soc-link" href="">Facebook</a>
+            </li>
+            <li class="mob-soc-item">
+              <a class="mob-soc-link" href=""> LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <section class="portfolio section">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
@@ -794,5 +876,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/no-scroll.js"></script>
   </body>
 </html>

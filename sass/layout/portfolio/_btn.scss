@@ -1,14 +1,25 @@
-.btn-list {
-    display: flex;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
+.btn-list {display: flex;
+           column-gap: 8px;
+    @media screen and(max-width:767px){
+        row-gap: 15px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+    }
+          @media screen and(min-width:768px){
+           margin-bottom: 50px;
+           margin-left: auto;
+           margin-right: auto;
+           justify-content: center;
+
+          }
+   
+    
+   
 }
 
-.btn-item+.btn-item {
-    margin-left: 8px;
-}
+// .btn-item+.btn-item {
+//     margin-left: 8px;
+// }
 
 .btn {
     font-family: inherit;

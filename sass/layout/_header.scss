@@ -14,7 +14,10 @@
 }
 
 .nav {
-    margin-left: 93px;
+    @media screen and(min-width:768px){
+        margin-left: 93px;
+    }
+   
    
 }
 
@@ -31,10 +34,25 @@
    
 }
 
-.header-contacts__icon {
+.header-contacts__icon--tel,
+.header-contacts__icon--mail{
     fill: currentColor;
     margin-right: 10px;
+   
 }
+.header-contacts__icon--mail{
+    @media screen and(min-width:1200px){
+        width: 16px;
+        height: 12px;
+        
+    }
+
+}
+.header-contacts__icon--tel{
+    @media screen and(min-width:1200px) {
+            width: 10px;
+            height: 16px;
+}}
 
 .nav__item+.nav__item {
     margin-left: 50px;
