@@ -28,14 +28,14 @@
 }
 
 .adress{
-    @media screen and(max-width:1199px) {
-        margin-bottom: 60px;
-    }
+  
    
 }
 .container-adress{
-    flex-grow: 1;
-    
+    @media screen and(max-width:767px) {
+            margin-bottom: 60px;
+        }
+   
         
         
     }
@@ -112,7 +112,7 @@
 }
 
 .footer-soc {
-    flex-grow: 1;
+    // flex-grow: 1;
     @media screen and(max-width:767px){
     margin-bottom: 60px;}
     // margin-left: 70px;
@@ -172,6 +172,12 @@
         display: flex;
             flex-direction: column;
             // margin-left: 93px;
+            @media screen and(max-width:1199px) {
+                    margin-top: 60px;
+                }
+                                 @media screen and(min-width:1200px) {
+                                     margin-left: 93px;
+                                 }
      
     }
    
